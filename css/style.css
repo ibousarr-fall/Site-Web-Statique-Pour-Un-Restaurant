@@ -195,6 +195,7 @@ ul li a:hover:after{
 }
 .container .item img{
   width: 100%;
+  transition: 1.5s;
   
 }
 .item .float{

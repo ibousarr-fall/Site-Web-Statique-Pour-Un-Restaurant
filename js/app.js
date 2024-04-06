@@ -51,7 +51,7 @@ ScrollReveal().reveal(".col50 .textpropos", {
 // défilement du bouton en savoir plus 
 ScrollReveal().reveal(".savoir-plus", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 1000,
 });
 //défilement des item pour un intervalle de 500s
 ScrollReveal().reveal(".item", {
