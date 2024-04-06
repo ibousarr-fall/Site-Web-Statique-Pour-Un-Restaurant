@@ -4,45 +4,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Site Web Statique Pour Un Restaurant</title>
 </head>
 <body>
-  <!-------barre den navigation--------->
+  <!-------barre den navigation start --------->
   <header class="home">
     <nav>
       <a href="index.html" class="logo"><span>Resto</span>ducoin</a>
+      <button class="openbtn" onclick="openMenu()">Menu</button>
         <ul>
+          <button class="closebtn" onclick="closeMenu()">Fermer</button>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html">A propos</a></li>
-          <li><a href="index.html">Menu</a></li>
-          <li><a href="index.html">Contact</a></li>
-          <a href="Reservation.html" class="btn">Reservation</a>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+ 
    <!--------home-page-content--------->
    <div class="home-page-content">
         <p><span>La réservation</span> est une étape <br>dans un monde de merveilles <br> gastronomiques. </p>
         <h1>Réserver votre table ici</h1>
-        <a href="Reservation.html" class="btn mt10">Voir le menu</a>
+        <div class="about-btn">
+        <a href="Reservation.html" class="btn">Réserve maintenant</a>
+      </div>
    </div>
    <div class="img-box">
         <img src="images/banner-thunb-e3a13f52.png" alt="">
    </div>
   </header>
+  <!-------barre den navigation end --------->
   <!-------section a propos de nous--------->
-  <section class="propos">
+  <section class="propos" id="about">
+   <div class="about-image">
+      <img src="images/about.jpg" alt="sandwish">
+  </div>
       <div class="col50">
         <h2><span>A</span> propos de nous</h2>
         <p class="textpropos">Bienvenu chez Resto du coin, situé à Guediawaye <br> Notre restaurant est bien plus qu'un simple lieu pour savourer des plats délicieux. <br> Que vous soyez à la recherche d'un repas en famille ou d'un évenement spécial, <br> notre ambiance chaleureuse et notre service attentif vous promettent <br> une expérience gastronomique imcomparable.</p>
-      </div>
-      <div>
-          <img src="images/about-banner.png" alt="image-propos">
+        <div class="savoir-plus">
+          <a href="#" class="btn">En savoir plus</a>
+        </div>
       </div>
   </section>
-  <div class="sect-menu">
-    <h2>Quelques plats traditionnels <br> basés sur l'emplacement</h2>
-  </div>
+   <!--------------Section menu start--------------->
+  <section class="sect-menu" id="menu">
+      <div class="qpt">
+         <h2>Notre menu alimentaire</h2>
+      </div>
+      <!--------------Galery image--------------->
+      <div class="container">
+           <!--------------item 1 start--------------->
+         <div class="item">
+             <img src="images/sandwish.png" alt="sandwish">
+             <div class="float">
+                 <h4 class="rouge">2000FCFA</h4>
+                 <i class="fa-solid fa-star"> 3.2k</i>
+             </div>
+             <h4 class="center">sandwish viande</h4>
+             <div class="commande">
+               <a href="commander.html" class="btn">Comander maintenant</a>
+             </div>
+         </div>
+         <!--------------item 1 end--------------->
+         <!--------------item 2 satrt--------------->
+         <div class="item">
+            <img src="images/sandwish.png" alt="sandwish">
+            <div class="float">
+                <h4 class="rouge">2000FCFA</h4>
+                <i class="fa-solid fa-star"> 3.2k</i>
+            </div>
+            <h4 class="center">sandwish viande</h4>
+            <div class="commande">
+                <a href="commander.html" class="btn">Comander maintenant</a>
+            </div>
+         </div>
+         <!--------------item 2 end--------------->
+         <!--------------item 3 satrt--------------->
+         <div class="item">
+            <img src="images/sandwish.png" alt="sandwish">
+            <div class="float">
+               <h4 class="rouge">2000FCFA</h4>
+               <i class="fa-solid fa-star"> 3.2k</i>
+            </div>
+            <h4 class="center">sandwish viande</h4>
+            <div class="commande">
+               <a href="commander.html" class="btn">Comander maintenant</a>
+            </div>
+         </div>
+         <!--------------item 3 end--------------->
+         <!--------------item 4 satrt--------------->
+         <div class="item">
+             <img src="images/cuisse-poulet.png" alt="cuisse-poulet">
+             <div class="float">
+                <h4 class="rouge">2000FCFA</h4>
+                <i class="fa-solid fa-star">3.2k</i>
+             </div>
+             <h4 class="center">Cuisses de poulet</h4>
+             <div class="commande">
+                <a href="commander.html" class="btn">Comander maintenant</a>
+             </div>
+         </div>
+         <!--------------item 4 end--------------->
+         <!--------------item 5 satrt--------------->
+         <div class="item">
+            <img src="images/cuisse-poulet.png" alt="cuisse-poulet">
+            <div class="float">
+               <h4 class="rouge">2000FCFA</h4>
+               <i class="fa-solid fa-star">3.2k</i>
+            </div>
+            <h4 class="center">Cuisses de poulet</h4>
+            <div class="commande">
+               <a href="commander.html" class="btn">Comander maintenant</a>
+            </div>
+        </div>
+        <!--------------item 5 end--------------->
+        <!--------------item 6 satrt--------------->
+        <div class="item">
+          <img src="images/cuisse-poulet.png" alt="cuisse-poulet">
+          <div class="float">
+            <h4 class="rouge">2000FCFA</h4>
+            <i class="fa-solid fa-star">3.2k</i>
+          </div>
+          <h4 class="center">Cuisses de poulet</h4>
+          <div class="commande">
+            <a href="commander.html" class="btn">Comander maintenant</a>
+          </div>
+       </div>
+         <!--------------item 6 end--------------->
+         <!--------------item 7 satrt--------------->
+         <div class="item">
+                 <img src="images/hamburger.png" alt="hamburger">
+                 <div class="float">
+                     <h4 class="rouge">2000FCFA</h4>
+                     <i class="fa-solid fa-star">3.2k</i>
+                 </div>
+                 <h4 class="center">Hamburgers au poulet</h4>
+                 <div class="commande">
+                     <a href="commander.html" class="btn">Comander maintenant</a>
+                 </div>
+         </div>
+         <!--------------item 7 end--------------->
+         <!--------------item 8 start--------------->
+         <div class="item">
+            <img src="images/hamburger.png" alt="hamburger">
+            <div class="float">
+                <h4 class="rouge">2000FCFA</h4>
+                <i class="fa-solid fa-star">3.2k</i>
+            </div>
+            <h4 class="center">Hamburgers au poulet</h4>
+            <div class="commande">
+                <a href="commander.html" class="btn">Comander maintenant</a>
+            </div>
+         </div>
+         <!--------------item 8 end--------------->
+         <!--------------item 9 start--------------->
+         <div class="item">
+            <img src="images/hamburger.png" alt="hamburger">
+            <div class="float">
+                <h4 class="rouge">2000FCFA</h4>
+                <i class="fa-solid fa-star">3.2k</i>
+            </div>
+            <h4 class="center">Hamburgers au poulet</h4>
+            <div class="commande">
+                <a href="commander.html" class="btn">Comander maintenant</a>
+            </div>
+         </div>
+         <!--------------item 9 end--------------->
+     </div>
+  </section>
+  
+  <!--------------Footer start--------------->
+
+  <footer id="contact">
+   <div class="flex-footer">
+      <div class="footer-col">
+        <h4>Restoducoin</h4>
+        <p>Chez Resto du coin, nous vous invitons <br> à embarquer pour un voyage de goût et de plaisir. <br> Nos tables sont plus que de simples lieux.</p>
+      </div>
+      <div class="column">
+         <h4>Politique de confidentialité</h4>
+         <a href="#">confiance et sécurité</a>
+         <a href="#">Conditions de services</a>
+         <a href="#">politique de confidentialité</a>
+      </div>
+      <div class="footer-col">
+         <h4>Contactez nous</h4>
+           <a href="#">ibousarr1309@gmail.com</a>
+         <div class="footer-social">
+           <a href="#"><i class="fa-brands fa-facebook" style="color: #3c0dc9;"></i></a>
+           <a href="#"><i class="fa-brands fa-square-instagram" style="color: #c44a7b;"></i></a>
+           <a href="#"><i class="fa-brands fa-youtube" style="color: #e51045;"></i></a>
+           <a href="#"><i class="fa-brands fa-square-twitter" style="color: #255ab6;"></i></a>
+         </div>
+      </div>
+   </div>
+   <p class="droit">@2024 Tous droit réservés</p>
+  </footer>
+  <!--------------Footer end--------------->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
