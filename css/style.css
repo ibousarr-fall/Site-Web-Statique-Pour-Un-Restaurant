@@ -29,9 +29,10 @@ header, nav, section{
 a{
   text-decoration: none;
 }
-.home{
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)), url("../images/assor.jpg");
+.home{  
+  min-height: 80vh;
+  background: url("../images/alex-haney-CAhjZmVk5H4-unsplash.jpg");
+  object-fit: cover;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -46,13 +47,12 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background);
-  color: var(--white);
+  background-color: var(--color-rouge);
   transition: 0.5s;
   z-index: 100;
 }
 .logo{
- color: var(--text-dark);
+ color: var(--white);
  font-weight: bold;
  font-size: 20px;
  text-decoration: none;
@@ -69,7 +69,7 @@ ul{
   list-style-type: none;
 }
 ul li a{
-  color: var(--text-dark);
+  color: var(--white);
   font-weight: 700;
   position: relative;
   font-size: 18px;
@@ -80,7 +80,7 @@ ul li a:after{
   left: 0;
   bottom: -5px;
   z-index: 1;
-  background-color: var(--color-rouge);
+  background-color: var(--white);
   height: 4px;
   width: 0%;
   border-radius: 4px;
@@ -92,7 +92,7 @@ ul li a:hover:after{
 
 .home-page-content{
   position: absolute;
-  bottom: 90px;
+  bottom: 80px;
 }
 .home-page-content p{
   color: var(--white);
@@ -160,12 +160,28 @@ ul li a:hover:after{
 .savoir-plus{
   margin-top: 20px;
 }
-.about-image img {
-  max-width: 450px;
-  margin: auto;
-  border-radius: 5px;
+.about-image{
+  overflow: hidden;
+  width: 450pcx;
+  height: 300px;
 }
-
+.about-image img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  z-index: -100;
+  border-radius: 5px;
+  animation: infinite animation1;
+  animation-duration: 50s;
+}
+@keyframes animation1 {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(2);
+  }
+}
 
 /* ============================== Section Menu===================================*/
 .qpt{
@@ -195,8 +211,13 @@ ul li a:hover:after{
 }
 .container .item img{
   width: 100%;
-  transition: 1.5s;
-  
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.container .item img:hover{
+  transform: scale(1.1);
+ 
 }
 .item .float{
   display: flex;
@@ -214,13 +235,9 @@ ul li a:hover:after{
 }
 .item .commande{
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
-.commande .color:hover{
-  background-color: var(--color-rouge);
-  color: var(--white);
-}
 
 /* ============================== Section Footer===================================*/
 footer{
